@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { StyleguideComponent } from './styleguide/styleguide.component';
 import {routing} from "./app.routing";
+import { MainNavComponent } from './main-nav/main-nav.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {routing} from "./app.routing";
     FooterComponent,
     ProjectsComponent,
     AboutmeComponent,
-    StyleguideComponent
+    StyleguideComponent,
+    MainNavComponent
   ],
   imports: [
     BrowserModule,
