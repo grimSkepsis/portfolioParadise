@@ -72,26 +72,19 @@
               hamburger
               menu on
               smaller
-              screens. Note: the hamburger menu in this example will not appear as there can only be one per page. Instead what is shown below represents what the nav will look like if javascript is disabled.
+              screens. Note: the hamburger menu in this example will not appear as there can only be one per page.
+              Instead what is shown below represents what the nav will look like if javascript is disabled.
               guide.</p>
-            <nav class="link-container">
-              <div class="nav-link"><a href="index.html">Company Site</a></div>
-              <div class="nav-link"><a href="style_guide.html"  class="selected">Style Guide</a></div>
-              <div class="nav-link"><a href="citations.html">Citations</a></div>
-              <div class="nav-link"><a href="https://github.com/grimSkepsis/CreationStation">Git Hub</a></div>
-            </nav>
-            <div class="hamburger">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+            <app-main-nav></app-main-nav>
             <div class="code-container spaced-top">
               <code>&lt;nav class="link-container"&gt;</code>
               <code class="indent-1">&lt;div class="nav-link"&gt;&lt;a class="selected"
                 href="index.html"&gt;Company Site&lt;/a&gt;&lt;/div&gt;</code>
-              <code class="indent-1">&lt;div class="nav-link"&gt;&lt;a href="style_guide.html" class="selected"&gt;Style Guide&lt;/a&gt;&lt;/div&gt;</code>
+              <code class="indent-1">&lt;div class="nav-link"&gt;&lt;a href="style_guide.html" class="selected"&gt;Style
+                Guide&lt;/a&gt;&lt;/div&gt;</code>
               <code class="indent-1">&lt;div class="nav-link"&gt;&lt;a href="citations.html"&gt;Citations&lt;/a&gt;&lt;/div&gt;</code>
-              <code class="indent-1">&lt;div class="nav-link"&gt;&lt;a href="https://github.com/grimSkepsis/CreationStation"&gt;Git Hub&lt;/a&gt;&lt;/div&gt;</code>
+              <code class="indent-1">&lt;div class="nav-link"&gt;&lt;a
+                href="https://github.com/grimSkepsis/CreationStation"&gt;Git Hub&lt;/a&gt;&lt;/div&gt;</code>
               <code>&lt;/nav&gt;</code>
               <code>&lt;div class="hamburger"&gt;</code>
               <code class="indent-1">&lt;div&gt;&lt;/div&gt;</code>
@@ -104,26 +97,20 @@
           <section id="equipment-listing">
 
             <h3>Listing</h3>
-            <div class="listing">
               <div class="grid gutters">
-                <div class="col one-third">
-                  <figure>
-                    <img src="img/laser-cutter.jpg" alt="Product image of a Laser cutter">
-                  </figure>
+                <div class="col">
+                  <app-project-listing
+                  projImage="assets/images/eb-img.png"
+                  projCaption="EB Vanguard - UX/Web Design, Service Design"
+                  projDescription="Image of computer displaying EB game vanguard"
+                  ></app-project-listing>
                 </div>
                 <div class="col">
-                  <div>
-                    <h3>Laser Cutter</h3>
-                    <p>Our laser cutters can cut through most thin wood, metal, and plastic
-                      materials with fairly high accuracy.</p>
-                    <p>$30 for 30 minutes or $3 per minute of cutting time.</p>
-                    <a class="nav-button" href="time_selection.html">
-                      RESERVE
-                    </a>
-                  </div>
+                </div>
+                <div class="col">
                 </div>
               </div>
-            </div>
+
 
             <div class="code-container">
               <code>&lt;div class="listing"&gt;</code>

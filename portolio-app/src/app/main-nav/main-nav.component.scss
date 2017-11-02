@@ -1,16 +1,24 @@
 nav {
-  display: flex;
-  width:100%;
-
+  padding-bottom: 1rem;
   a {
+    font-weight: 700;
     flex: 1;
     text-align: center;
-    padding: 3rem 6rem;
+    width: 100%;
+    display: inline-block;
     text-decoration: none;
+    padding: 3rem 0rem;
     &:hover, &:focus {
       border: solid;
       transition: transform 0.1s ease-in;
       transform: translateY(0.5rem);
     }
   }
+  a.active {
+    background: gainsboro;
+    border: solid;
+    transition: transform 0.1s ease-in;
+    transform: translateY(0.5rem);
+  }
 }
+

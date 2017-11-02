@@ -1,0 +1,10 @@
+.nav-button {
+  border: solid;
+  text-decoration: none;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color:black;
+  &:hover, &:focus {
+    background: #D9D9D9;
+  }
+}

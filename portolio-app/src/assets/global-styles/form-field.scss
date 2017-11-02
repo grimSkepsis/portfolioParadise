@@ -1,0 +1,18 @@
+
+input {
+  border: solid;
+  text-decoration: none;
+  padding: 1rem;
+  background: white;
+  color:black;
+}
+
+input[type="submit"], input[type="reset"] {
+  &:hover, &:focus {
+    background: #c0c0c0;
+  }
+}
+
+label {
+  display: block;
+}

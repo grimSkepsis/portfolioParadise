@@ -9,6 +9,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { StyleguideComponent } from './styleguide/styleguide.component';
 import {routing} from "./app.routing";
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { ProjectListingComponent } from './project-listing/project-listing.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainNavComponent } from './main-nav/main-nav.component';
     ProjectsComponent,
     AboutmeComponent,
     StyleguideComponent,
-    MainNavComponent
+    MainNavComponent,
+    ProjectListingComponent
   ],
   imports: [
     BrowserModule,
