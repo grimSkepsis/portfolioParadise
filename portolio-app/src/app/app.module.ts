@@ -7,6 +7,7 @@ import { FooterComponent } from './footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { StyleguideComponent } from './styleguide/styleguide.component';
+import {routing} from "./app.routing";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { StyleguideComponent } from './styleguide/styleguide.component';
     StyleguideComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
