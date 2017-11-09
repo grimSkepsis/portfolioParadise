@@ -1,5 +1,10 @@
+@import "../assets/global-styles/variables";
 header {
-  max-width: 72rem;
   margin: auto;
   width: 100%;
+  position:fixed;
+  left:0;
+  top:0;
+  padding-bottom:4rem;
+  background: linear-gradient($main-color, transparent);
 }

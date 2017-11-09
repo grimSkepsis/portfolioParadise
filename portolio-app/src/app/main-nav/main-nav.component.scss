@@ -1,5 +1,7 @@
 nav {
   padding-bottom: 1rem;
+  max-width: 72rem;
+  margin:auto;
   a {
     font-weight: 700;
     font-size: 1.5rem;
@@ -9,7 +11,6 @@ nav {
     width: 100%;
     display: inline-block;
     text-decoration: none;
-    padding: 3rem 0rem;
     &:hover, &:focus {
       border: solid;
       transition: transform 0.1s ease-in;
@@ -17,7 +18,6 @@ nav {
     }
   }
   a.active {
-    background: gainsboro;
     border: solid;
     transition: transform 0.1s ease-in;
     transform: translateY(0.5rem);

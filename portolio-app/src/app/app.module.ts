@@ -13,6 +13,7 @@ import { ProjectListingComponent } from './projects/project-listing/project-list
 import { VanguardProjectComponent } from './projects/vanguard-project/vanguard-project.component';
 import { CompanySiteProjectComponent } from './projects/company-site-project/company-site-project.component';
 import {project_routing} from "./projects/projects.routing";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {project_routing} from "./projects/projects.routing";
     MainNavComponent,
     ProjectListingComponent,
     VanguardProjectComponent,
-    CompanySiteProjectComponent
+    CompanySiteProjectComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

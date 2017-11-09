@@ -14,8 +14,13 @@
   }
 }
 
+.splash-header {
+  font-size: 11rem;
+  color: white;
+}
+
 body {
-  background: #F19C9E;
+  background: $main-color;
 }
 
 @media (min-width: 27.6875em) {
