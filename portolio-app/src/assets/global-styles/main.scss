@@ -1,0 +1,28 @@
+.background-img {
+  position: fixed;
+  z-index: -1;
+  left:0;
+  top:0;
+  width: 100%;
+  height:100%;
+  img {
+    height:100%;
+    width:auto;
+    max-width:92rem;
+    margin: auto;
+    display: block;
+  }
+}
+
+body {
+  background: #F19C9E;
+}
+
+@media (min-width: 27.6875em) {
+  .background-img {
+    img {
+      width:100%;
+      height: auto;
+    }
+  }
+}

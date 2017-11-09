@@ -6,7 +6,9 @@
   }
   &:hover, &:focus {
     transform: translateX(-0.2rem) translateY(-0.3rem);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, padding 0.2s;
     box-shadow: 10px 10px 5px #888888;
+    border: dotted;
+    padding: 2rem;
   }
 }
