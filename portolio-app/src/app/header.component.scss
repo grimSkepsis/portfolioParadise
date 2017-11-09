@@ -5,6 +5,6 @@ header {
   position:fixed;
   left:0;
   top:0;
-  padding-bottom:4rem;
+  padding-bottom:$header-padding;
   background: linear-gradient($main-color, transparent);
 }
