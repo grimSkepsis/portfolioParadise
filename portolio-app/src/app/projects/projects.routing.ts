@@ -6,8 +6,8 @@ import {ProjectsComponent} from "./projects.component";
 const PROJECT_ROUTES: Routes = [
   {path: 'projects', children: [
     {path: '', component:ProjectsComponent},
-    {path: ':vanguard', component:VanguardProjectComponent},
-    {path: ':company-site', component:CompanySiteProjectComponent}
+    {path: 'vanguard', component:VanguardProjectComponent},
+    {path: 'company-site', component:CompanySiteProjectComponent}
   ]},
 
 ];
