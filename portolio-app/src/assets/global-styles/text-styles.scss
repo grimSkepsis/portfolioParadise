@@ -3,11 +3,13 @@
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
+  color: $main-font-color;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: light;
+  color: $main-font-color;
 }
 
 p {
@@ -21,6 +23,6 @@ a {
 }
 
 em {
-  color: $matcha-green;
+  color: $tertiary-color;
   font-style: normal;
 }

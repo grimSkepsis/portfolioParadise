@@ -1,6 +1,9 @@
+@import "../assets/global-styles/variables";
+
 footer {
-  max-width: 72rem;
   margin: auto;
   width: 100%;
+  padding: 1rem;
+  background: $secondary-color;
 }
 
