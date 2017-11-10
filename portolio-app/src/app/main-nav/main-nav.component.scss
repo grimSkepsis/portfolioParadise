@@ -1,6 +1,8 @@
+@import "../../assets/global-styles/variables";
+
 nav {
   padding-bottom: 1rem;
-  max-width: 72rem;
+  max-width: $max-width;
   margin:auto;
   a {
     font-weight: 700;
