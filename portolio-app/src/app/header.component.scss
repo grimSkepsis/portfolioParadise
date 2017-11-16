@@ -7,4 +7,5 @@ header {
   top:0;
   padding-bottom:$header-padding;
   background: linear-gradient($main-color, transparent);
+  z-index: 1;
 }

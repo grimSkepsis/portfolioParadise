@@ -1,12 +1,27 @@
 
+$carousel-transition-time: 0.5s;
+$carousel-arrow-width: 2rem;
+$carousel-arrow-position:  -$carousel-arrow-width - 0.2rem;
+
 :host ::ng-deep figure {
-    display: block;
+  opacity: 0;
+  position: absolute;
+  transition: opacity $carousel-transition-time;
+  top:0;
+  left:0;
+  width:100%;
   &.visible {
-    display: block;
+    transition: opacity $carousel-transition-time;
+    opacity: 1;
+    position:relative;
   }
 }
 
 .carousel {
+  position: relative;
+}
+
+.carousel-content {
   position: relative;
 }
 
@@ -18,18 +33,18 @@
   position: absolute;
   top: 0;
   svg {
-    width: 2rem;
+    width: $carousel-arrow-width;
   }
 }
 
 .prev-arrow {
-  left: -2.2rem;
+  left: $carousel-arrow-position;
   @include carousel-arrow;
 
 }
 
 .next-arrow {
-  right: -2.2rem;
+  right: $carousel-arrow-position;
   @include carousel-arrow;
   svg {
     transform: rotate(180deg);
@@ -38,11 +53,12 @@
 
 .carousel-arrow {
   display: none;
+  cursor: pointer;
 }
 
 @media (min-width: 54.125em) {
   :host ::ng-deep figure {
-    display: none;
+    opacity: 0;
   }
   .carousel-arrow {
     display: flex;
