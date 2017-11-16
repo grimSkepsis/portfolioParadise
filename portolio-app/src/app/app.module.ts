@@ -14,6 +14,7 @@ import { VanguardProjectComponent } from './projects/vanguard-project/vanguard-p
 import { CompanySiteProjectComponent } from './projects/company-site-project/company-site-project.component';
 import {project_routing} from "./projects/projects.routing";
 import { HomeComponent } from './home/home.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     ProjectListingComponent,
     VanguardProjectComponent,
     CompanySiteProjectComponent,
-    HomeComponent
+    HomeComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
