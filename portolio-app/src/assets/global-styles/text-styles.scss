@@ -28,8 +28,7 @@ em {
 }
 
 .splash-sub-header {
-  margin-top: 12rem;
-  font-size: 5rem;
+  font-size: 1.3rem;
 }
 
 ul {
@@ -37,5 +36,24 @@ ul {
   li {
     list-style: none;
 
+  }
+}
+
+.splash-header {
+  font-size: 4rem;
+  padding-top: 0;
+  color: white;
+}
+
+.splash-wrapper {
+  min-height: 100vh;
+}
+
+@media (min-width: 54.125em) {
+  .splash-header {
+    font-size: 11rem;
+  }
+  .splash-sub-header {
+    font-size: 5rem;
   }
 }

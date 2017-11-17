@@ -14,25 +14,18 @@
   }
 }
 
-.splash-header {
-  font-size: 11rem;
-  color: white;
-}
-
 body {
   background: $main-color;
 }
 
 .header-padded {
-  padding-top: $header-padding;
+  padding-top: $header-padding-mobile;
 }
 
-@media (min-width: 27.6875em) {
-  .background-img {
-    img {
-      width:100%;
-      height: auto;
-    }
+@media (min-width: 54.125em) {
+  .header-padded {
+    padding-top: $header-padding;
   }
 }
+
 
