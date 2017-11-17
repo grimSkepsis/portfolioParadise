@@ -8,8 +8,9 @@ input {
 }
 
 input[type="submit"], input[type="reset"] {
+  background: $secondary-color;
   &:hover, &:focus {
-    background: #c0c0c0;
+    background: lighten($secondary-color, 30%);
   }
 }
 

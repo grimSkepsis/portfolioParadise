@@ -31,5 +31,12 @@ body {
 }
 
 app-root {
-  flex:2;
+  flex:1;
+}
+
+figure {
+  margin: 0;
+  img {
+    width: 100%;
+  }
 }

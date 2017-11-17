@@ -15,7 +15,7 @@
             <div class="example-container">
               <p>This <a href="#">link</a> is in text.</p>
             </div>
-            <div class="code-container">
+            <div class="code-container spaced-top">
               <code>
                 &lt;p&gt;This &lt;a href="#"&gt;link&lt;/a&gt; is in text. &lt;/p&gt;
               </code>
@@ -108,27 +108,40 @@
               <div class="col">
               </div>
             </div>
-
-
             <div class="code-container">
-              <code>&lt;div class="listing"&gt;</code>
-              <code class="indent-1">&lt;div class="grid gutters"&gt;</code>
-              <code class="indent-2">&lt;div class="col one-third"&gt;</code>
-              <code class="indent-3">&lt;figure"&gt;</code>
-              <code class="indent-4">&lt;img src="img/laser-cutter.jpg" alt="Product image of a Laser cutter"&gt;</code>
+              <code>&lt;app-project-listing</code>
+              <code class="indent-1">projImage="assets/images/vanguard/eb-img.png"</code>
+              <code class="indent-1">projCaption="EB Vanguard - UX/Web Design, Service Design"</code>
+              <code class="indent-1"> projDescription="Image of computer displaying EB game vanguard"</code>
+              <code>&gt;&lt;/app-project-listing&gt;</code>
+            </div>
+
+
+          </section>
+
+          <section id="carousel">
+            <h3>Carousel</h3>
+            <div class="grid gutters">
+              <div class="col">
+                <app-carousel>
+                  <figure class="visible">
+                    <img src="../../assets/images/vanguard/chart.png" alt="">
+                  </figure>
+                  <figure>
+                    <img src="../../assets/images/vanguard/business-model.png" alt="">
+                  </figure>
+                </app-carousel>
+              </div>
+            </div>
+            <div class="code-container">
+              <code>&lt;app-carousel&gt;</code>
+              <code class="indent-3">&lt;figure class="visible"&gt;</code>
+              <code class="indent-4">&lt;img src="image1.jpg" alt="Picture of a chart summarizing EB games is losing revenue from physical sales of product"&gt;</code>
               <code class="indent-3">&lt;/figure&gt;</code>
-              <code class="indent-2">&lt;/div&gt;</code>
-              <code class="indent-2">&lt;div class="col"&gt;</code>
-              <code class="indent-3">&lt;div&gt;</code>
-              <code class="indent-4">&lt;h3&gt;Laser Cutter&lt;/h3&gt;</code>
-              <code class="indent-4">&lt;p&gt;Our laser cutters can cut through most thin wood, metal, and plastic
-                materials with fairly high accuracy.&lt;/p&gt;</code>
-              <code class="indent-4">&lt;p&gt;$30 for 30 minutes or $3 per minute of cutting time.&lt;/p&gt;</code>
-              <code class="indent-4">&lt;a class="nav-button" href="#"&gt;Reserve&lt;/a&gt;</code>
-              <code class="indent-3">&lt;/div&gt;</code>
-              <code class="indent-2">&lt;/div&gt;</code>
-              <code class="indent-1">&lt;/div&gt;</code>
-              <code>&lt;/div&gt;</code>
+              <code class="indent-3">&lt;figure"&gt;</code>
+              <code class="indent-4">&lt;img src="image2.jpg" alt="Picture of a game rental business model."&gt;</code>
+              <code class="indent-3">&lt;/figure&gt;</code>
+              <code>&lt;/app-carousel&gt;</code>
             </div>
           </section>
         </div>
