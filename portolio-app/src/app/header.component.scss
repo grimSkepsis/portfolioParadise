@@ -1,11 +1,18 @@
 @import "../assets/global-styles/variables";
+
 header {
   margin: auto;
   width: 100%;
-  position:fixed;
-  left:0;
-  top:0;
-  padding-bottom:$header-padding;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-bottom: $header-padding;
   background: linear-gradient($main-color, transparent);
   z-index: 1;
+}
+
+@media (min-width: 54.125em) {
+  header {
+    position: fixed;
+  }
 }

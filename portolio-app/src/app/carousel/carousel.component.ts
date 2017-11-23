@@ -25,20 +25,19 @@ export class CarouselComponent implements OnInit, AfterViewInit {
 
   public next(): void {
     let visibleIndex: number = this.findVisibleIndex();
-    if (visibleIndex < this._carouselContentArray.length - 1) {
-      this._carouselContentArray[visibleIndex].classList.remove('visible');
-      visibleIndex++;
-      this._carouselContentArray[visibleIndex].classList.add('visible');
-    }
+
+    this._carouselContentArray[visibleIndex].classList.remove('visible');
+    visibleIndex++;
+    if (visibleIndex === this._carouselContentArray.length) visibleIndex = 0;
+    this._carouselContentArray[visibleIndex].classList.add('visible');
   }
 
- public previous(): void {
-   let visibleIndex: number = this.findVisibleIndex();
-   if (visibleIndex > 0) {
-     this._carouselContentArray[visibleIndex].classList.remove('visible');
-     visibleIndex--;
-     this._carouselContentArray[visibleIndex].classList.add('visible');
-   }
+  public previous(): void {
+    let visibleIndex: number = this.findVisibleIndex();
+    this._carouselContentArray[visibleIndex].classList.remove('visible');
+    visibleIndex--;
+    if (visibleIndex < 0) visibleIndex = this._carouselContentArray.length - 1;
+    this._carouselContentArray[visibleIndex].classList.add('visible');
   }
 
   private findVisibleIndex(): number {
