@@ -3,7 +3,7 @@
 .project-listing {
   margin: 0;
   position: relative;
-  box-shadow: 10px 10px 5px $tertiary-color;
+  //box-shadow: 10px 10px 5px $tertiary-color;
   img {
     display: block;
   }
@@ -16,19 +16,8 @@
   top:0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s ease;
-  &:hover, &:focus {
-    opacity: 1;
-
-    .overlay-text {
-      p {
-        animation: title-animation;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-      }
-    }
-  }
 }
 
 .overlay-color {
@@ -42,6 +31,7 @@
 }
 
 .overlay-text {
+  padding: 1rem;
   position: absolute;
   left: 0;
   top:0;
@@ -66,5 +56,22 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (min-width: 54.125em) {
+  .overlay {
+    opacity: 0;
+    &:hover, &:focus {
+      opacity: 1;
+
+      .overlay-text {
+        p {
+          animation: title-animation;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+        }
+      }
+    }
   }
 }
