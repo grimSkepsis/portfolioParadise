@@ -6,8 +6,8 @@ header {
   position: relative;
   left: 0;
   top: 0;
-  padding-bottom: $header-padding;
-  background: linear-gradient($main-color, transparent);
+
+  background: $main-color;
   z-index: 1;
 }
 

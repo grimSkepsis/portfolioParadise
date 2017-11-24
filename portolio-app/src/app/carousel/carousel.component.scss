@@ -1,4 +1,4 @@
-
+@import "../../assets/global-styles/variables";
 $carousel-transition-time: 0.5s;
 $carousel-arrow-width: 2rem;
 $carousel-arrow-position:  -$carousel-arrow-width - 0.2rem;
@@ -34,6 +34,14 @@ $carousel-arrow-position:  -$carousel-arrow-width - 0.2rem;
   top: 0;
   svg {
     width: $carousel-arrow-width;
+    polygon {
+      fill: $secondary-color;
+    }
+    &:hover, &:focus {
+      polygon {
+        fill: darken($secondary-color, 20%);
+      }
+    }
   }
 }
 

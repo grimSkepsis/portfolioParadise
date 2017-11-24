@@ -1,0 +1,35 @@
+.splash-title-1 {
+  animation: splash-title-animation-1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.splash-title-2 {
+  opacity: 0;
+  animation: splash-title-animation-1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.splash-title-3 {
+  opacity: 0;
+  animation: splash-title-animation-1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes splash-title-animation-1 {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

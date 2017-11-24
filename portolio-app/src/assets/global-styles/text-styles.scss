@@ -45,9 +45,7 @@ ul {
   color: white;
 }
 
-.splash-wrapper {
-  min-height: 100vh;
-}
+
 
 @media (min-width: 54.125em) {
   .splash-header {
@@ -55,5 +53,8 @@ ul {
   }
   .splash-sub-header {
     font-size: 5rem;
+  }
+  .splash-wrapper {
+    min-height: 100vh;
   }
 }
