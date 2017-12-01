@@ -5,5 +5,7 @@ footer {
   width: 100%;
   padding: 1rem;
   background: $secondary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
