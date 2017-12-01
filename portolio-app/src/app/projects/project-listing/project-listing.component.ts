@@ -11,6 +11,7 @@ export class ProjectListingComponent implements OnInit {
 
   ngOnInit() {
   }
+  @Input() public rLink: string = "";
   @Input() public projImage: string = "";
   @Input() public projCaption: string = "";
   @Input() public projCaption2: string = "";

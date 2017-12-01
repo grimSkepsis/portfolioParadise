@@ -15,6 +15,7 @@ import { CompanySiteProjectComponent } from './projects/company-site-project/com
 import {project_routing} from "./projects/projects.routing";
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CitationsComponent } from './citations/citations.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     VanguardProjectComponent,
     CompanySiteProjectComponent,
     HomeComponent,
-    CarouselComponent
+    CarouselComponent,
+    CitationsComponent
   ],
   imports: [
     BrowserModule,

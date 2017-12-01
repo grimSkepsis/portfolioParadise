@@ -13,4 +13,7 @@
 
 a {
   color: darken($secondary-color, 30%);
+  &:hover, &:focus {
+    color: $main-font-color;
+  }
 }
