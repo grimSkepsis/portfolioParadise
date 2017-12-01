@@ -3,7 +3,6 @@
 .project-listing {
   margin: 0;
   position: relative;
-  //box-shadow: 10px 10px 5px $tertiary-color;
   img {
     display: block;
   }
@@ -12,8 +11,8 @@
 .overlay {
   position: absolute;
   cursor: pointer;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -23,7 +22,7 @@
 .overlay-color {
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: #343436;
@@ -34,7 +33,7 @@
   padding: 1rem;
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   color: white;
@@ -45,6 +44,34 @@
   p {
     text-align: center;
   }
+}
+
+.lower-heading {
+  text-align: center;
+  display: none;
+}
+
+.overlay-text {
+  .project-title {
+    padding-right: 1rem;
+  }
+  .skills-description {
+    position:relative;
+    padding-left: 1rem;
+    &:before {
+      content: "";
+      background: white;
+      position: absolute;
+      bottom: 10%;
+      top: 10%;
+      left: 0;
+      width: 1px;
+    }
+  }
+}
+
+.skills-description {
+  font-size: 0.9rem;
 }
 
 @keyframes title-animation {
@@ -59,18 +86,49 @@
   }
 }
 
-@media (min-width: 54.125em) {
-  .overlay {
-    opacity: 0;
-    &:hover, &:focus {
-      opacity: 1;
+@keyframes lower-title-animation {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
+  to {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 54.125em) {
+  .overlay-text {
+    p {
+      opacity: 0;
+    }
+  }
+  .lower-heading {
+    display: block;
+  }
+  .project-listing-wrapper {
+    .overlay {
+      opacity: 0;
+    }
+    &:hover, &:focus {
+      .overlay {
+        opacity: 1;
+      }
       .overlay-text {
         p {
           animation: title-animation;
-          animation-duration: 1s;
+          animation-duration: 0.5s;
           animation-iteration-count: 1;
+          animation-delay: 0.1s;
+          animation-fill-mode: forwards;
         }
+      }
+      .lower-heading {
+        animation: lower-title-animation;
+        animation-duration: 0.4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
       }
     }
   }

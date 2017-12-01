@@ -1,9 +1,19 @@
-<figure class="project-listing">
-  <div class="overlay">
-    <div class="overlay-color"></div>
-    <div class="overlay-text">
-      <p>{{projCaption}}</p>
+<div class="project-listing-wrapper">
+  <figure class="project-listing">
+    <div class="overlay">
+      <div class="overlay-color"></div>
+      <div class="overlay-text">
+        <p class="project-title">{{projCaption}}</p>
+        <p class="skills-description">{{projCaption2}}</p>
+      </div>
     </div>
+    <img [src]="projImage" [alt]="projDescription">
+  </figure>
+  <div class="lower-heading padded-container">
+    <p class="project-title">
+      {{projCaption}}
+    </p>
+    <p class="skills-description">{{projCaption2}}</p>
   </div>
-  <img [src]="projImage" [alt]="projDescription">
-</figure>
+
+</div>

@@ -13,5 +13,6 @@ export class ProjectListingComponent implements OnInit {
   }
   @Input() public projImage: string = "";
   @Input() public projCaption: string = "";
+  @Input() public projCaption2: string = "";
   @Input() public projDescription: string = "";
 }
