@@ -1,2 +1,13 @@
-.project-description {
+@import '../../assets/global-styles/variables';
+
+.project-foreward {
+  background-color: $secondary-color;
+  padding: 4rem 3rem;
+}
+
+.project-foreward p {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }

@@ -16,6 +16,7 @@ import {project_routing} from "./projects/projects.routing";
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CitationsComponent } from './citations/citations.component';
+import { HaidaNowProjectComponent } from './projects/haida-now-project/haida-now-project.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CitationsComponent } from './citations/citations.component';
     CompanySiteProjectComponent,
     HomeComponent,
     CarouselComponent,
-    CitationsComponent
+    CitationsComponent,
+    HaidaNowProjectComponent
   ],
   imports: [
     BrowserModule,
